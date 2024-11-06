@@ -5,7 +5,33 @@ import os
 # Define your organization, project, and PAT
 organization = "dorset-ics"
 project = "DiiS%20Development%20Team"
-pat = ''
+
+# Get PAT function
+def get_pat_from_file():
+    # Define the path to your PAT file on the desktop
+    desktop_path = os.path.join(os.path.expanduser("~"), "Desktop", "pat.txt")
+    
+    # Read the PAT from the file
+    try:
+        with open(desktop_path, "r") as file:
+            pat = file.read().strip()  # Remove any extra whitespace or newlines
+            return pat
+    except FileNotFoundError:
+        print("PAT file not found. Please ensure 'pat.txt' is on your desktop.")
+        return None
+    except Exception as e:
+        print(f"An error occurred while reading the PAT: {e}")
+        return None
+
+# Use the function to get the PAT
+pat = get_pat_from_file()
+
+# Example use of the PAT with your query
+if pat:
+    # Proceed with the API call using the retrieved PAT
+    print("PAT successfully retrieved.")
+else:
+    print("PAT could not be retrieved.")
 
 # WIQL query URL (fetching work items)
 url = f"https://dev.azure.com/{organization}/{project}/_apis/wit/wiql?api-version=7.0"
