@@ -23,7 +23,6 @@ def get_pat_from_file():
         print(f"An error occurred while reading the PAT: {e}")
         return None
 
-# Use the function to get the PAT
 pat = get_pat_from_file()
 
 # Example use of the PAT with your query
@@ -39,7 +38,7 @@ url = f"https://dev.azure.com/{organization}/{project}/_apis/wit/wiql?api-versio
 # Define the WIQL query to fetch all work items (you can modify the query)
 query = {
     "query": (
-        "SELECT  [System.Id], "
+        "SELECT [System.Id] "
         "FROM WorkItems "
         "WHERE [System.TeamProject] = @project "
         "AND [System.WorkItemType] <> '' "
