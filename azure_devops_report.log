@@ -3,3 +3,12 @@
 2024-12-02 10:16:18,186 - INFO - Report saved as JSON: C:\Users\conor.moag\Desktop\weekly_report_20241202_101618.json
 2024-12-02 10:16:18,186 - INFO - Report saved as TXT: C:\Users\conor.moag\Desktop\weekly_report_20241202_101618.txt
 2024-12-02 10:16:18,187 - INFO - Weekly report generated successfully
+2024-12-02 10:39:57,092 - INFO - PAT successfully retrieved
+2024-12-02 10:39:57,484 - INFO - Successfully retrieved 25 work items
+2024-12-02 10:40:04,860 - ERROR - Error generating weekly report: 'charmap' codec can't encode character '\U0001f31f' in position 0: character maps to <undefined>
+2024-12-02 10:40:04,861 - ERROR - Application failed: 'charmap' codec can't encode character '\U0001f31f' in position 0: character maps to <undefined>
+2024-12-02 10:45:07,643 - INFO - PAT successfully retrieved
+2024-12-02 10:45:08,046 - INFO - Successfully retrieved 25 work items
+2024-12-02 10:45:16,446 - INFO - Report saved as JSON: C:\Users\conor.moag\Desktop\weekly_report_20241202_104516.json
+2024-12-02 10:45:16,446 - INFO - Report saved as TXT: C:\Users\conor.moag\Desktop\weekly_report_20241202_104516.txt
+2024-12-02 10:45:16,446 - INFO - Weekly report generated successfully
